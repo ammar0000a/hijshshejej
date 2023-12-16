@@ -8,7 +8,6 @@ services:
       dockerfile: Dockerfile
     command: bash start.sh
     restart: on-failure
-    ports:
-      - "80:80"
-      - "8080:8080"
-      CC_DOCKER_EXPOSED_HTTP_PORT:"8080"
+    ports: "8080:8080"
+
+
